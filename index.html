@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri + React + Typescript</title>
+
+    <title>Live2D with PixiJS</title>
+    <!-- Charger live2d.min.js pour Cubism 2.1 -->
+    <script src="https://cdn.jsdelivr.net/gh/dylanNew/live2d/webgl/Live2D/lib/live2d.min.js"></script>
+    <!-- Charger live2dcubismcore.min.js pour Cubism 4 -->
+    <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
+    <!-- Charger Pixi.js -->
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.x/dist/pixi.min.js"></script>
+    <!-- Charger Pixi Live2D Display -->
+    <script src="https://cdn.jsdelivr.net/gh/RaSan147/pixi-live2d-display@v0.5.0-ls-7/dist/index.min.js"></script>
+    <style>
+      body {
+        background-color: #36393f; /* Set background color to Discord-like dark gray */
+        color: #fff; /* Set text color to white for better contrast */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <canvas id="canvas"></canvas>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
